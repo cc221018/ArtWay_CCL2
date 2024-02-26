@@ -1,0 +1,140 @@
+
+@keyframes picZoom {
+    from {
+        scale: 1.0;
+        background-color: rgba(0,0,0,0);
+    }
+    to {
+        scale: 1.1;
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+
+
+.top-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.nav-header {
+    padding: 7px;
+    border: solid 1px rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 2px;
+}
+
+.nav-header:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+.nav-header:active {
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.navbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+#logo {
+    width: 40px;
+    height: 63px;
+    margin-bottom: 10px;
+}
+
+#biglogo {
+    margin-top: 20px;
+    width: 150px;
+    height: 230px;
+}
+
+.home-navbar {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)) ,url(../contents/blurred_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    letter-spacing: 10px;
+    color: white;
+    font-family: Inder;
+}
+
+.header {
+    letter-spacing: 30px;
+}
+
+
+
+
+h3 {
+    font-family: Inder;
+    margin-bottom: 50px;
+}
+
+.intro {
+    margin-top: 120px;
+}
+
+.boxes {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxes > a {
+    color: white;
+}
+
+.boxes > a:hover {
+    text-decoration: none;
+    animation: forwards picZoom 0.5s;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 320px;
+    box-shadow: 0px 15px 5px rgba(32, 32, 43, 0.623);
+}
+
+.boxinfo {
+    text-align: center;
+    margin: 30px;
+    padding-top: 10px;
+}
+
+.boxheader {
+    font-family: inter-light;
+    text-align: center;
+    margin: 40px 30px 0px 30px;
+    padding-bottom: 20px;
+    border-bottom: white solid 2px;
+    letter-spacing: 4px;
+}

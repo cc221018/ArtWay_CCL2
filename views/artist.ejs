@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile_styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Artworks</title>
+
+    <script>
+        $(document).ready(() => {
+            document.getElementById("pageheader").textContent="ARTISTS";
+
+        })
+    </script>
+</head>
+
+<body>
+    <%- include('nav.ejs') %>
+
+<div class="container">
+    <div class="container artistprofilebox">
+
+        <div class="infobox">
+                <img class="profilepic" src="/uploads/profilepics/<%= artist.profilepicture %>" alt="profile pic"/>
+                <p> <%= artist.firstname %> <%= artist.lastname %></p>
+                <h4> @<%= artist.username %> </h4>
+                <p>- <%= artist.country %> -</p> <br/>
+                <p> <%= artist.description %> </p>
+        </div>
+
+        <div class="postsbox">
+
+            <div class="artworkcolumn">
+                <h4>Artworks</h4>
+
+                <% artist.artworks.forEach((artwork) => { %>
+
+                <div class="artwork">
+                    <img class="artworkpic" src="/uploads/artworks/<%= artwork.imagepath %>" alt="profile pic"/>
+                    <p class="date"><%= artwork.date %></p>
+                </div>
+                
+                <% }) %>
+            </div>
+
+            <div class="insightcolumn">
+                <h4>Insights</h4>
+
+                <% artist.insights.forEach((insight) => { %>
+
+                <div class="insight">
+                    <h5><%= insight.title %></h5>
+                    <p><%- insight.text %></p>
+                    <p class="date"><%= insight.date %></p>
+                </div>
+
+                <% }) %>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+   
+</body>
+
+</html>

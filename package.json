@@ -1,0 +1,24 @@
+{
+  "name": "artway_project",
+  "version": "1.0.0",
+  "description": "CCL2 BCC22 Schiphorst cc221018 \"ArtWay\" project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cc221018_schiphorst",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "uuid": "^9.0.0"
+  }
+}

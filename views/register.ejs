@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/register_styles.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <form action="/register" method="post">
+        <h3>Register</h3>
+
+        <div class="sided-inputs">
+            <div>
+                <label for="username">Username</label>
+                <input required name="username" type="text" placeholder="Your desired username">
+            </div>
+            <div>
+                <label for="email">E-Mail</label>
+                <input required name="email" type="text" placeholder="Your e-mail">
+            </div>
+        </div>
+
+        <div class="sided-inputs">
+            <div>
+                <label for="firstname">First Name</label>
+                <input name="firstname" type="text" placeholder="Your first name">
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input name="lastname" type="text" placeholder="Your last name">
+            </div>
+        </div>
+
+        <div class="sided-inputs">
+            <div>
+                <label for="country">Country</label>
+                <input name="country" type="text" placeholder="Your home country">
+            </div>
+            <div>
+                <label for="phonenumber">Phone number</label>
+                <input name="phonenumber" type="text" placeholder="Your phone number">
+            </div>
+        </div>
+
+        <label for="description">Description</label>
+        <input name="description" type="text" placeholder="Anything you want to say about yourself (eg. your work, company, ...)">
+
+        <div class="sided-inputs">
+            <div>
+                <label for="password">Password</label>
+                <input required name="password" type="password" placeholder="Your desired password">
+            </div>
+            <div>
+                <label for="confirmpassword">Confirm password</label>
+                <input required name="confirmpassword" type="password" placeholder="Repeat your desired password">
+            </div>
+        </div>
+        <button type="submit" class="btn">Register</button>
+
+        <div class="login">
+            Already have an account?
+            <button type="button" class="loginbtn" onclick="location.href='/login'">Login</button>
+        </div>
+    </form>
+</body>
+</html>

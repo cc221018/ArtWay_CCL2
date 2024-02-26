@@ -1,0 +1,140 @@
+
+
+form {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(255, 222, 179, 0.164);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5a8;
+}
+
+.btnC {
+    margin-left: 40%;
+    margin-top: 40px;
+    width: 20%;
+    background-color: #b87b42a4;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0px 5px 8px rgba(20, 26, 31, 0.541);
+}
+
+.btnC:hover {
+    color: white;
+    background-color: rgb(196, 154, 63);
+    border: 1px solid rgb(255, 211, 154);
+    box-shadow: 0px 0px 20px rgba(202, 169, 97, 0.774);
+}
+
+.btnC:focus, .delbtn:focus {
+    outline: none;
+    border: 1p solid rgba(20, 26, 31, 0);
+}
+
+.sided-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sided-inputs > div {
+    width: 46%;
+}
+
+.editbuttonbox {
+    display: flex;
+    justify-content: end;
+    margin-top: 60px;
+}
+
+.fileinput {
+    width: 50%;
+    margin: auto;
+}
+
+.fileinput > input {
+    padding: 7px;
+}
+
+.delbtn {
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 20%;
+    background-color: #427897a4;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid rgba(135, 211, 255, 0.404);
+    box-shadow: 0px 5px 8px rgba(20, 26, 31, 0.541);
+}
+
+.delbtn:hover {
+    color: white;
+    background-color: rgb(93, 165, 199);
+    border: 1px solid rgba(154, 226, 255, 0.562);
+    box-shadow: 0px 0px 20px rgba(205, 243, 255, 0.555);
+}
+
+
+.subdiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.delpostbtn {
+    color: white;
+    background-color: rgba(226, 114, 142, 0.493);
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(233, 116, 180, 0.404);
+    height: 35px;
+}
+
+.delpostbtn:hover {
+    background-color: rgba(221, 107, 141, 0.849);
+    border: 1px solid rgba(255, 187, 216, 0.562);
+    box-shadow: 0px 0px 20px rgba(255, 183, 219, 0.555);
+}
+
+.delpostbtn:focus {
+    outline: none;
+}

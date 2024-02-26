@@ -1,0 +1,4 @@
+/.env
+/.idea
+/database.sql
+/node_modules

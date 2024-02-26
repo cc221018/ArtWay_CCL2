@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/post_styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Post</title>
+
+    <script>
+        $(document).ready(() => {
+            document.getElementById("pageheader").textContent="NEW POST";
+    
+        })
+    
+        function displayArtworkForm() {
+            document.getElementById("insightForm").style.display='none';
+            document.getElementById("btnleft").style.display='none';
+            document.getElementById("artworkForm").style.display='flex';
+            document.getElementById("btnright").style.display='flex';
+        }
+        
+        function displayInsightForm() {
+            document.getElementById("artworkForm").style.display='none';
+            document.getElementById("btnright").style.display='none';
+            document.getElementById("insightForm").style.display='flex';
+            document.getElementById("btnleft").style.display='flex';
+        }
+    </script>
+</head>
+
+
+<body>
+    <%- include('nav.ejs') %>
+
+<div class="containerbox">
+
+    <div class="buttonbox">
+        <div id="btnleft"><button id="artworkbtn" onclick="displayArtworkForm()">Artwork</button></div>
+        <div id="btnright"><button id="insightbtn" onclick="displayInsightForm()">Insight</button></div>
+    </div>
+
+    <form action="/post/artwork" method="post" enctype="multipart/form-data" id="artworkForm">
+        <h3>ARTWORK</h3>
+
+        <div class="fileinput">
+            <label for="artwork">Upload Picture</label>
+            <input required accept="image/*" name="pic" type="file">
+        </div>
+
+        <button type="submit" class="postbtn">Post</button>
+    </form>
+
+
+    <form action="/post/insight" method="post" id="insightForm">
+        <h3>INSIGHT</h3>
+
+        <label for="title">Title</label>
+        <input required name="title" type="text" placeholder="Header for your Insight">
+
+        <label for="text">Content</label>
+        <textarea required class="contentinput" name="text" rows="15" cols="50" placeholder="Content of your Insight"></textarea>
+
+        <button type="submit" class="postbtn">Post</button>
+    </form>
+
+</div>
+</body>

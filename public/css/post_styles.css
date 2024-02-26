@@ -1,0 +1,166 @@
+
+.containerbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 700px;
+}
+
+#insightForm {
+    display: none;
+    height: 750px;
+    width: 700px;
+}
+
+#artworkForm {
+    display: flex;
+    height: 350px;
+    width: 700px;
+}
+
+#insightForm, #artworkForm {
+    flex-direction: column;
+    margin: auto;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 40px 35px;
+    margin-bottom: 160px;
+}
+
+input, textarea {
+    color: #ffffff;
+}
+
+#insightForm input:focus, textarea:focus {
+    outline: none;
+}
+
+form h3 {
+    font-size: 29px;
+    text-align: center;
+    font-family: Inder;
+    letter-spacing: 4px;
+}
+
+.fileinput {
+    margin: auto;
+}
+
+.fileinput > input {
+    text-align: center;
+    padding: 7px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+input {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.contentinput {
+    resize: none;
+}
+
+textarea {
+    display: block;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    border-top: 2px solid rgba(15, 15, 15, 0.699);
+    border-left: 2px solid rgba(15, 15, 15, 0.699);
+    border-bottom: 2px solid rgba(133, 133, 133, 0.548);
+    border-right: 2px solid rgba(133, 133, 133, 0.548);
+}
+
+::placeholder {
+    color: #e5e5e570;
+}
+
+
+.postbtn {
+    margin: auto;
+    width: 25%;
+    background-color: #2a5c85c4;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 5px 4px rgba(16, 23, 32, 0.438);
+    border: 1px solid rgba(82, 152, 209, 0.322);
+}
+
+.postbtn:hover {
+    color: white;
+    background-color: rgb(59, 129, 161);
+    box-shadow: 0px 0px 20px rgba(192, 226, 255, 0.616);
+    border: 1px solid rgba(192, 232, 255, 0.76);
+}
+
+.postbtn:focus {
+    outline: none;
+}
+
+.buttonbox {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 650px;
+}
+
+#btnleft {
+    width: 100%;
+    display: none;
+    justify-content: start;
+}
+
+#btnright {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#artworkbtn, #insightbtn {
+    display: flex;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: #e4a46979;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 8px 5px rgba(0, 0, 0, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#artworkbtn:hover, #insightbtn:hover {
+    color: white;
+    background-color: rgba(79, 155, 190, 0.767);
+    box-shadow: 0px 0px 20px rgba(192, 226, 255, 0.452);
+    border: rgb(117, 211, 255) 1px solid;
+}
+
+#artworkbtn:focus, #insightbtn:focus {
+    outline: none;
+}

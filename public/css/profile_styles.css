@@ -1,0 +1,132 @@
+
+.profilebox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.219);
+}
+
+.artistprofilebox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.219);
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    border-bottom: white 2px solid;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.profilepic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 80px;
+    margin-bottom: 40px;
+}
+
+h4, h5 {
+    font-family: inder;
+}
+
+.postsbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 50px 50px 50px;
+    text-align: center;
+}
+
+.insightcolumn {
+    width: 45%;
+}
+
+.artworkcolumn {
+    width: 45%;
+}
+
+.artworkpic {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.artwork {
+    text-align: left;
+    height: 450px;
+    width: 450px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.219);
+}
+
+.insight {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 450px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.219);
+}
+
+.buttonbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.btn1, .btn2 {
+    color: white;
+    margin-top: 50px;
+    background-color: #e4a46979;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 8px 5px rgba(0, 0, 0, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.btn1:hover {
+    color: white;
+    background-color: rgba(79, 155, 190, 0.767);
+    box-shadow: 0px 0px 20px rgba(192, 226, 255, 0.452);
+    border: rgb(117, 211, 255) 1px solid;
+}
+
+.btn2:hover {
+    color: white;
+    background-color: rgba(248, 99, 181, 0.678);
+    box-shadow: 0px 0px 20px rgba(255, 192, 224, 0.473);
+    border: rgb(255, 145, 200) 1px solid;
+}
+
+.btn1:focus, .btn2:focus {
+    outline: none;
+}
+
+.date {
+    margin-top: 10px;
+    padding: 3px;
+    font-size: 0.7rem;
+}
